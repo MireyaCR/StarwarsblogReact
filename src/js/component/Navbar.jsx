@@ -2,9 +2,8 @@ import React from "react";
 
 const Navbar=()=> {
     return(
-        <nav>
-            Aqui va el Navbar
-        </nav>
+        <nav >fhkadsflkjasd
+		</nav>
     )
 }
 export default Navbar;

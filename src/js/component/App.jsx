@@ -11,8 +11,8 @@ const App = () => {
 		<div className="text-center">Star Wars
 			<Navbar/>
 			<BrowserRouter>
-				<Route path="/"component={Home}/>
-				<Route>path="/detail/:id" component={View}</Route>
+				<Route exact path="/" component={Home} />
+				<Route path="/detail:id" component={View} />
 			</BrowserRouter>
 			<Footer/>
 

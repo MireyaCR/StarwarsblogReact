@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer=()=> {
     return(
-        <footer>
-            Aqui va el Footer
-        </footer>
+        <footer className="footer mt-auto py-3 text-center">
+		
+	</footer>
     )
 }
 export default Footer;

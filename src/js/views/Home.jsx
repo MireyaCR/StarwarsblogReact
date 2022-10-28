@@ -4,6 +4,7 @@ const Home=()=> {
     return(
         <div>
             Aqui van las cartas
+            
         </div>
     )
 }
