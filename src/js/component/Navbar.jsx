@@ -7,4 +7,4 @@ const Navbar=()=> {
         </nav>
     )
 }
-export default App;
+export default Navbar;
