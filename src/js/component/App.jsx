@@ -8,7 +8,7 @@ import View from "../views/View.jsx";
 
 const App = () => {
 	return (
-		<div className="text-center">Star Wars
+		<div>
 			<Navbar/>
 			<BrowserRouter>
 				<Route exact path="/" component={Home} />
