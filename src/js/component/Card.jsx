@@ -1,13 +1,13 @@
 import propTypes from "prop-types";
 import React from "react";
+import notfound from "../../../public/assets/404.png";
 
 const Card=(props) =>{
-
 
     return(
     <div className="col card m-2" style={{padding:0}}>
             <div className="card-header" style={{padding:0}}>
-                    <img src={"	https://starwars-visualguide.com/assets/img/"+props.type+"/"+props.uid+".jpg"} className="card-img-top" alt="..."/>
+                <img src={"https://starwars-visualguide.com/assets/img/"+props.type+"/"+props.uid+".jpg"} className="card-img-top" onError={(event)=>event.target.src=notfound} alt="..."/>
             </div>
             <div className="card-body">
                     <p className="card-title"><strong>{props.name}</strong></p>

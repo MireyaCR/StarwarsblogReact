@@ -10,4 +10,6 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-
+/* img::before{
+    background-image: url(404.png);
+} */
