@@ -8,7 +8,7 @@ const People=()=> {
   const [personajes, setPersonajes]=useState([])
   const [naves,setNaves]=useState([])
   const [planets,setPlanets]=useState([])
-  
+ 
   useEffect(()=>{
     getLista('people').then(respuesta => {
       setPersonajes(respuesta)
