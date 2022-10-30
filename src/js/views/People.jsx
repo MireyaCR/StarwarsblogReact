@@ -7,6 +7,7 @@ import getLista from "../api/getLista.js";
 const People=()=> {
   const [personajes, setPersonajes]=useState([])
   const [naves,setNaves]=useState([])
+  const [planets,setPlanets]=useState([])
   
   useEffect(()=>{
     getLista('people').then(respuesta => {
@@ -17,6 +18,12 @@ const People=()=> {
     })
     getLista('starships').then(respuesta => {
       setNaves(respuesta)
+    })    
+    .catch(err => {
+      console.error('ERROR',err)
+    })
+    getLista('planets').then(respuesta => {
+      setPlanets(respuesta)
     })    
     .catch(err => {
       console.error('ERROR',err)
@@ -39,9 +46,9 @@ const People=()=> {
                     })}                                                                       
               </div>
               <div className="row row-cols-5 g-6 mx-5 mb-5">
-                    {personajes.map((element,index)=>{
+                    {planets.map((element,index)=>{
                       return (
-                        <Card key={index} name={element.name} uid={element.uid}/>
+                        <Card key={index} name={element.name} uid={element.uid} type={'planets'}/>
                       )
                     })}                                                                       
               </div> 
