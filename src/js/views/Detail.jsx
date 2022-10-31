@@ -25,8 +25,8 @@ const Detail= (props) =>{
                         <button href="#" type="button" className="btn btn-primary btn-sm float-start"><Link to={"/"}>Home</Link> </button>  
 
                     </div>
-                    <div class="col-3">
-                        {/* <img src="" className="rounded-circle img-fluid" style="width: 18rem;"/> */}
+                    <div className="col-3">
+                        {/* <img src={"https://starwars-visualguide.com/assets/img/"+props.typeImage+"/"+props.uid+".jpg"}" className="rounded-circle img-fluid" style="width: 18rem;"/> */}
                      </div>
                  </div>
             </div>
