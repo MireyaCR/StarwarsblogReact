@@ -4,7 +4,7 @@ import getLista from "../api/getLista.js";
 
 
 
-const People=()=> {
+const Home=()=> {
   const [personajes, setPersonajes]=useState([])
   const [naves,setNaves]=useState([])
   const [planets,setPlanets]=useState([])
@@ -34,25 +34,25 @@ const People=()=> {
             <div className="row row-cols-5 g-6 mx-5 mb-5">
                     {personajes.map((element,index)=>{
                       return (
-                        <Card key={index} name={element.name} uid={element.uid} type={'characters'}/>
+                        <Card key={index} name={element.name} uid={element.uid} typeImage={'characters'} type={'people'}/>
                       )
                     })}                                                                       
               </div>   
               <div className="row row-cols-5 g-6 mx-5 mb-5">
                     {naves.map((element,index)=>{
                       return (
-                        <Card key={index} name={element.name} uid={element.uid} type={'starships'}/>
+                        <Card key={index} name={element.name} uid={element.uid} typeImage={'starships'} type={'starships'}/>
                       )
                     })}                                                                       
               </div>
               <div className="row row-cols-5 g-6 mx-5 mb-5">
                     {planets.map((element,index)=>{
                       return (
-                        <Card key={index} name={element.name} uid={element.uid} type={'planets'}/>
+                        <Card key={index} name={element.name} uid={element.uid} typeImage={'planets'} type={'planets'}/>
                       )
                     })}                                                                       
               </div> 
           </div>
   )
 }
-export default People;
+export default Home;

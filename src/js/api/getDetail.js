@@ -1,6 +1,6 @@
-const getLista =(obj) =>{
+const getDetail =(obj,key) =>{
 
-    return fetch("https://www.swapi.tech/api/"+obj)
+    return fetch("https://www.swapi.tech/api/"+obj+"/"+key)
     .then(res => {
         console.log('RESPONSE',res)
         return res.json()
@@ -12,5 +12,5 @@ const getLista =(obj) =>{
     
 
 }
-export default getLista;
+export default getDetail;
 
