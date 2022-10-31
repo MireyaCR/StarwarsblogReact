@@ -7,7 +7,7 @@ const getDetail =(obj,key) =>{
     })
     .then(data => {
         console.log('DATA RES',data.results)
-        return data.results
+        return data.result
     })
     
 
