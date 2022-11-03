@@ -20,17 +20,16 @@ const Detail= (props) =>{
     const {id} = useParams()
 
     return(
-        <div>
-            <div className="card mb-3" >
-                <div className="row g-0 mx-auto">
+        <div className="container-fluid">
+            <div className="card  mx-5 mt-2 mb-2" >
+                <div className="row mx-auto">
                     <strong>{location.state.type.toUpperCase()}</strong>
                 </div>
-                <div className="row g-0">
-                
-                    <div class="col-md-4">
-                        <img src={"https://starwars-visualguide.com/assets/img/"+location.state.typeImage+"/"+id+".jpg"} onError={(event)=>event.target.src=notfound} className="img-fluid rounded-start" alt="..."/>
+                <div className="row g-0">                
+                    <div class="col-md-4 p-2">
+                        <img src={"https://starwars-visualguide.com/assets/img/"+location.state.typeImage+"/"+id+".jpg"} onError={(event)=>event.target.src=notfound} className="img-fluid rounded" alt="..."/>
                     </div>
-                <div className="col-md-8">
+                <div className="col-md-8 p-2">
                     <div className="card-body">
                         <ul ><h6> <strong>{detail.properties.name}</strong></h6>
                             {Object.keys(detail.properties).map((element,index)=>{
@@ -41,7 +40,7 @@ const Detail= (props) =>{
                             )
                        })}
                        </ul>
-                       <Link className="btn btn-primary btn-sm" to={"/"}>Home </Link> 
+                       <Link className="btn btn-primary btn-sm mx-5" to={"/"}>Home </Link> 
                     </div>
              </div>
          </div>
