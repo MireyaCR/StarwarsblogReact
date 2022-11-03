@@ -31,22 +31,21 @@ const Home=()=> {
   }, [])
   return(
           <div className="container-fluid">
-            <div className="row row-cols-1 row-cols-md-6 g-6 mx-5 mb-5">
-          
+            <div className="row justify-content-md-center m-5">         
                     {personajes.map((element,index)=>{
                       return (
                         <Card key={index} name={element.name} uid={element.uid} typeImage={'characters'} type={'people'}/>
                       )
                     })}          
             </div>   
-            <div className="row row-cols-1 row-cols-md-6 g-6 mx-5 mb-5">
+            <div className="row justify-content-md-center m-5">
                     {naves.map((element,index)=>{
                       return (
                         <Card key={index} name={element.name} uid={element.uid} typeImage={'starships'} type={'starships'}/>
                       )
                     })}                                                                       
               </div>
-              <div className="row row-cols-1 row-cols-md-6 g-6 mx-5 mb-5">
+              <div className="row justify-content-md-center m-5">
                     {planets.map((element,index)=>{
                       return (
                         <Card key={index} name={element.name} uid={element.uid} typeImage={'planets'} type={'planets'}/>

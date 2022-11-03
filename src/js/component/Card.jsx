@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Card=(props) =>{
     const history=useHistory();
     return(
-    <div className="col card m-2" style={{padding:0}}>
+    <div className="col-sm-2 card m-1" style={{padding:0}}>
             <div className="card-header" style={{padding:0}}>
                 <img src={"https://starwars-visualguide.com/assets/img/"+props.typeImage+"/"+props.uid+".jpg"} className="card-img-top" onError={(event)=>event.target.src=notfound} alt="..."/>
             </div>
